@@ -115,9 +115,7 @@ body {
     justify-content: space-between;
 }
 
-.menu .lista-menu .item-menu {
-    position: relative;
-}
+.menu .lista-menu .item-menu {}
 
 .menu .lista-menu .item-menu a {
     color: var(--cor0);
@@ -128,7 +126,7 @@ body {
     padding: 0.2rem;
 }
 
-.menu .lista-menu .item-menu a:hover {
+.menu .lista-menu .item-menu > a:hover {
     background-color: var(--cor2);
     transition: .5s;
     padding: 0.2rem;
@@ -156,20 +154,42 @@ body {
 }
 
 .item-menu .check-sub-menu-1 {
-    top: 20%;
+    top: 5%;
     position: absolute;
-    left: 80%;
+    left: 67%;
 }
 
 .item-menu .check-sub-menu-1 img {}
 
-.item-menu .lista-sub-menu-1 {
+.item-menu .sub-menu-1 {
+    position: absolute;
+    width: 12%;
     display: none;
 }
+.item-menu:hover .sub-menu-1{
+    display: block;
+} 
 
-.item-menu .lista-sub-menu-1 .item-sub-menu {}
+.item-menu .sub-menu-1 .lista-sub-menu-1 {
+    list-style: none;
+    background-color: var(--cor3);
+    box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.384);
+}
 
-.item-menu .lista-sub-menu-1 .item-sub-menu a {}
+.item-menu .sub-menu-1 .lista-sub-menu-1 .item-sub-menu {
+    border-bottom: 1px solid var(--cor5);
+}
+
+.item-menu .sub-menu-1 .lista-sub-menu-1 .item-sub-menu a {
+    width: 100%;
+    display: block;
+}
+
+.item-menu .sub-menu-1 .lista-sub-menu-1 .item-sub-menu a:hover {
+    background-color: var(--cor2);
+    transition: .5s;
+    padding: 0.2rem;
+}
 
 /* SUB MENU 2 */
 .item-menu p {}
@@ -179,9 +199,9 @@ body {
 }
 
 .item-menu .check-sub-menu-2 {
-    top: 20%;
+    top: 5%;
     position: absolute;
-    left: 85%;
+    left: 74.9%;
 }
 
 .item-menu .check-sub-menu-2 img {}
