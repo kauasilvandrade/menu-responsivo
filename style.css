@@ -308,7 +308,7 @@ body {
         width: 40%;
         height: 100vh;
         background-color: #5d04d9dc;
-        top: 14%;
+        top: 12.7%;
         right: -100%;
         text-align: center;
         transition: all .5s;
@@ -334,13 +334,13 @@ body {
     
     .item-menu .check-sub-menu-1 {
         display: block;
-        top: 11%;
+        top: 10.3%;
         left: 85%;
     }
 
     .item-menu .check-sub-menu-2 {
         display: block;
-        top: 20%;
+        top: 28%;
         left: 85%;
     }
 
