@@ -240,11 +240,11 @@ body {
 
 .menu .checkbox-btn {
     position: absolute;
-    right: 4%;
-    top: 3%;
+    right: 9%;
+    top: 4%;
     cursor: pointer;
-    z-index: 1;
     display: none;
+    z-index: 1;
 }
 
 .menu .checkbox-btn img {
@@ -335,13 +335,13 @@ body {
     
     .item-menu .check-sub-menu-1 {
         display: block;
-        top: 13.4%;
+        top: 11.4%;
         left: 85%;
     }
 
     .item-menu .check-sub-menu-2 {
         display: block;
-        top: 24%;
+        top: 20%;
         left: 85%;
     }
 
