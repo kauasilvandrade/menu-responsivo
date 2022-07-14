@@ -311,7 +311,7 @@ body {
         width: 20rem;
         height: 100vh;
         background-color: #5d04d9dc;
-        top: 0;
+        top: 5.8rem;
         right: -100%;
         text-align: center;
         transition: all .5s;
