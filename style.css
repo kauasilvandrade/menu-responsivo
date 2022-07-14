@@ -91,6 +91,24 @@ body {
     width: 40%;
 }
 
+/* BOTÃO CELULAR */
+.menu #btn {
+    display: none;
+}
+
+.menu .checkbox-btn {
+    position: absolute;
+    right: 9%;
+    top: 4%;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+}
+
+.menu .checkbox-btn img {
+    width: 2.4rem;
+}
+
 /* LISTA DE LINKS */
 .menu .lista-menu {
     display: flex;
@@ -142,6 +160,7 @@ body {
     position: absolute;
     left: 67%;
     display: none;
+    z-index: 1;
 }
 
 .item-menu .check-sub-menu-1 img {}
@@ -150,6 +169,7 @@ body {
     position: absolute;
     width: 12%;
     display: none;
+    z-index: 1;
 }
 .item-menu:hover .sub-menu-1{
     display: block;
@@ -233,24 +253,6 @@ body {
     text-shadow: 5px 4px 8px var(--cor5);
 }
 
-/* BOTÃO CELULAR */
-.menu #btn {
-    display: none;
-}
-
-.menu .checkbox-btn {
-    position: absolute;
-    right: 9%;
-    top: 4%;
-    cursor: pointer;
-    display: none;
-    z-index: 1;
-}
-
-.menu .checkbox-btn img {
-    width: 2.4rem;
-}
-
 
 @media screen and (min-width: 1000px) and (max-width:1260px) {
     .item-menu .sub-menu-1 {
@@ -306,7 +308,7 @@ body {
     
     .menu .lista-menu {
         position: fixed;
-        width: 40%;
+        width: 20rem;
         height: 100vh;
         background-color: #5d04d9dc;
         top: 0;
@@ -335,18 +337,19 @@ body {
     
     .item-menu .check-sub-menu-1 {
         display: block;
-        top: 11.4%;
-        left: 85%;
+        top: 4.7rem;
+        left: 16.6rem;
     }
 
     .item-menu .check-sub-menu-2 {
         display: block;
-        top: 20%;
-        left: 85%;
+        top: 8.5rem;
+        left: 16.7rem;
     }
 
     .sub-menu-1 .lista-sub-menu-1  {
         height: 48vh;
+        z-index: 1;
         flex-direction: column;
         display: flex;
         justify-content: space-between;
@@ -376,7 +379,7 @@ body {
     }
 
     .item-menu .sub-menu-1{
-        width: 40%;
+        width: 20rem;
         position: fixed;
         right: -100%;
         transition: all 0.5s;
@@ -387,7 +390,7 @@ body {
     }
 
     .item-menu .sub-menu-2 {
-        width: 40%;
+        width: 20rem;
         position: fixed;
         right: -100%;
         transition: all 0.5s;
@@ -401,21 +404,6 @@ body {
     .item-menu p:hover {
         background-color: var(--cor4);
         border-radius: unset;
-    }
-
-}
-
-@media screen and (min-width: 350px) and (max-width: 670px) {
-    .menu .lista-menu {
-        width: 63%;
-    }
-
-    .item-menu .sub-menu-1 {
-        width: 63%;
-    }
-
-    .item-menu .sub-menu-2 {
-        width: 63%;
     }
 
 }
