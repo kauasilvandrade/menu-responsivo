@@ -96,17 +96,28 @@ body {
     display: none;
 }
 
-.menu .checkbox-btn {
+.menu .checkbox-btn {}
+
+.menu .checkbox-btn .fa {
     position: absolute;
     right: 9%;
-    top: 4%;
+    top: 3%;
     cursor: pointer;
+    font-size: 2.5em;
+    color: white;
     display: none;
-    z-index: 1;
 }
 
-.menu .checkbox-btn img {
+.menu .checkbox-btn .fa-solid{
     width: 2.4rem;
+    position: fixed;
+    right: 0;
+    font-size: 2.5em;
+    top: 0.4rem;
+    color: white;
+    transition: all .5s;
+    opacity: 0;
+    z-index: 2;
 }
 
 /* LISTA DE LINKS */
@@ -298,20 +309,23 @@ body {
         width: 100%;
     }
     
-    .menu .checkbox-btn {
+    .menu .checkbox-btn .fa {
         display: block;
     }
 
     .menu #btn:checked ~ .lista-menu {
         right: 0;
     }
+    .menu #btn:checked + .checkbox-btn .fa-solid {
+        opacity: 1;
+    }
     
     .menu .lista-menu {
         position: fixed;
         width: 20rem;
         height: 100vh;
-        background-color: #5d04d9dc;
-        top: 5.8rem;
+        background-color: var(--cor4);
+        top: 0;
         right: -100%;
         text-align: center;
         transition: all .5s;
